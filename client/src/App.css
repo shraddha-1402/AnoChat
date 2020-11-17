@@ -4,19 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --theme-color: blueviolet;
 }
-
-/*
-#root {
-  background-color: green; 
-  
-}*/
 body {  
   color:black;
-  /* background: yellow; */
   font-family: Lato, sans-serif;
   line-height: 1.4;
 }
@@ -31,42 +23,33 @@ body {
   font-weight:900;
   font-size: 2rem;
   color: var(--theme-color);
+  z-index: 4;
 }
 .nav-styling{
-  /* font-size: 3rem; */
   background-color: whitesmoke;
   box-shadow: 0 3px 10px rgba(0,0,0,.15);
 }
 
-/* @media screen and (min-width: 768px) {
-  .nav-center {
-    max-width: 1170px;
-    margin: 0 auto;
-    display: flex;
-  }
-} */
-
-/* hero */
+/* header */
 .header{
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: url("./images/MainPurple.svg") no-repeat;/* /images/MainPurple.svg*/
+  background: url("./images/MainPurple.svg") no-repeat;
   background-size: contain;
   background-position: top;
   width: 100%;
   height: 200vh;
-  /* max-height: ; */
-  /* background-position: center; */
 }
+
+/* banner */
 .banner-position{
   min-height: calc(80vh - 66px);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* align-items: center; */
   padding:140px 40px 20px 40px;
 }
 .banner-title{
@@ -79,9 +62,10 @@ body {
 .banner-title > p {
   max-width: 80%;
   font-size: 1.1rem;
+  margin-bottom: 30px;
 }
 .chat-button{
-  margin-top: 50px;
+  margin-top: 20px;
   margin-right: auto;
   padding: 10px 20px 10px 20px;
   border: none;
@@ -89,30 +73,35 @@ body {
   background-color: var(--theme-color);
   color: #f7f7f7;
   height: 40px;
-  /* font-family: monospace; */
   font-size: 1rem;
   font-weight: 700;
 }
-/* #banner-image-div{
-  background-color: greenyellow;
-} */
-.banner-image{
-  /* padding-top: 10vh;
-  width: 40vw;
-  min-width: 40vh;
-  max-width: 60vh; */
+.banner-mac-img{
   width: 40vw;
   height: auto;
-
+  position: relative;
+  z-index: 1;
+}
+.banner-chatApp-img{
+  position: absolute;
+  z-index: 2;
+  width: 40vw;
+  height: auto;
+  top: 154px;
+}
+.banner-anonymous-img{
+  position: absolute;
+  z-index: 3;
+  width: 15vw;
+  height: auto;
+  right: 35vw;
+  top: 65px;
 }
 @media screen and (max-width: 100vh) {
   .header{
-    /* background-size: contain; */
     width: calc(100vw);
-    /* width: auto; */
   }
 }
-
 
 .services {
   padding: 5.5rem 0;
@@ -130,14 +119,15 @@ body {
   grid-row-gap: 2rem;
   grid-column-gap: 50px;
 }
-/* .service span {
+.services-icon {
+  margin-top: 2rem;;
   display: inline-block;
-  color: var(--primaryColor);
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-} */
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 0.1rem;
+}
 .services h6 {
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
   text-transform: capitalize;
   font-size: 1.2rem;
 }
@@ -151,35 +141,8 @@ body {
     max-width: 1170px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .services p {
     width: 100%;
   }
 }
-/*end of services */
-/* featured rooms */
-
-/* .featured-rooms {
-  padding: 5rem 0;
-}
-.featured-rooms-center {
-  width: 80vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 40px;
-}
-@media screen and (min-width: 776px) {
-  .featured-rooms-center {
-    width: 90vw;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  }
-}
-@media screen and (min-width: 992px) {
-  .featured-rooms-center {
-    width: 95vw;
-    max-width: 1170px;
-  }
-} */
