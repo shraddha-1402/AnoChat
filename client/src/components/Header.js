@@ -4,14 +4,6 @@ import imac from '../images/imac.svg'
 import anonymous from '../images/ano.png'
 import chatAppSS from '../images/chat-app-ss.png'
 import Features from './Features';
-// import { Link, Route } from 'react-router-dom';
-// import logo from '/public/logo192.png';
-/*
-<Link to="/">
-                        <img src="/public/logo192.png" alt="AnoChat" />
-                        </Link>
-                        <Route path="/">Hero</Route>
-*/
 
 const Hero = () => {
     const [scrolled, setScrolled] = useState("navbar nav-center");
@@ -35,11 +27,10 @@ const Hero = () => {
         <header className="header">
           <div className="banner-position">
             <div className="banner-title">
-              <h1>Talk Anonymous</h1>
-              <h1>With Anyone</h1>
+              <h1>Talk Anonymously</h1>
               <h1>Anytime</h1>
               <p>
-                  A space where you can meet people,talk your heart out,
+                  A space where you can meet people, talk your heart out,
                   without any commitments or revealing yourself.
               </p>
               <button className="chat-button">Chat Now</button>
